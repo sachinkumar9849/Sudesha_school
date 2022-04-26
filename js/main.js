@@ -1,3 +1,9 @@
+var preloader = document.getElementById('loading');
+
+function myFunction() {
+    preloader.style.display = 'none';
+
+}
 var $slide = $(".slide")
     .slick({
         infinite: true,

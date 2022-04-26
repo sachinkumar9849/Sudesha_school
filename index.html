@@ -17,60 +17,71 @@
     <link rel="stylesheet" href="css/responsive.css" />
 </head>
 
-<body>
+<body onload="myFunction()">
+    <div id="loading"></div>
 
-    <header class="">
+
+    <header class="animate__bounce">
         <div class="container-fluid">
             <nav class="header section-header top-header-bg header-sticky d-flex justify-content-between">
                 <div class="logo">
                     <img src="https://sudesha.edu.np/wp-content/themes/archiesoft/images/logo.png" class="img-fluid" alt="logo">
                 </div>
                 <ul class="menu_list d-flex align-items-center">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li>
-                        <a href="#">WordPress</a>
+                        <a href="#">Foundations</a>
                         <!-- First Tier Drop Down -->
                         <ul class="sub_menu">
-                            <li><a href="#">Themes</a></li>
-                            <li><a href="#">Plugins</a></li>
-                            <li><a href="#">Tutorials</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">WordPress</a>
-                        <!-- First Tier Drop Down -->
-                        <ul class="sub_menu">
-                            <li><a href="#">Themes</a></li>
-                            <li><a href="#">Plugins</a></li>
-                            <li><a href="#">Tutorials</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">WordPress</a>
-                        <!-- First Tier Drop Down -->
-                        <ul class="sub_menu">
-                            <li><a href="#">Themes</a></li>
-                            <li><a href="#">Plugins</a></li>
-                            <li><a href="#">Tutorials</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Web Design</a>
-                        <!-- First Tier Drop Down -->
-                        <ul class="sub_menu">
-                            <li><a href="#">Resources</a></li>
-                            <li><a href="#">Links</a></li>
+                            <li><a href="about.html">About Sudesha</a></li>
+                            <li><a href="foundations.html">Foundations </a></li>
+                            <li><a href="history.html">History</a></li>
+                            <li><a href="executive_team.html">Executive Team</a></li>
                             <li>
-                                <a href="#">Tutorials</a>
+                                <a href="milestone.html">Milestone</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Program</a>
+                        <!-- First Tier Drop Down -->
+                        <ul class="sub_menu">
+                            <li><a href="sudesha_kindergarten.html">Sudesha Kindergarten </a></li>
+                            <li><a href="elementary_school.html">Elementary School</a></li>
+                            <li><a href="secondary_school.html">Secondary School</a></li>
+                            <li><a href="academic_team.html">Academic team</a></li>
+                            <li>
+                                <a href="#">Curriculum</a>
                                 <!-- Second Tier Drop Down -->
                                 <ul class="sub_child_menu ">
-                                    <li class="bg-white"><a href="#">HTML/CSS</a></li>
-                                    <li class="bg-white"><a href="#">jQuery</a></li>
+                                    <li class="bg-white"><a href="campus_facilites.html">On Campus Facilites </a></li>
+                                    <li class="bg-white"><a href="special_programs.html">Special Programs </a></li>
+                                    <li class="bg-white"><a href="child_protection.html">Child Protection Policy </a></li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#">Graphic Design</a></li>
+                    <li>
+                        <a href="#">Admission</a>
+                        <!-- First Tier Drop Down -->
+                        <ul class="sub_menu">
+                            <li><a href="enroll_sheesha.html">Enroll at sheesha</a></li>
+                            <li><a href="admission.html">Admission Policy</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Community</a>
+                        <!-- First Tier Drop Down -->
+                        <ul class="sub_menu">
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="alumni.html">Alumni </a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
                     <li class="d-none">
                         <div id="search-menu">
                             <div class="wrapper">
@@ -84,10 +95,11 @@
                         <div id="myNav" class="overlay">
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                             <div class="overlay-content">
-                                <a href="#">About</a>
-                                <a href="#">Services</a>
-                                <a href="#">Clients</a>
-                                <a href="#">Contact</a>
+                                <a href="index.html">Home</a>
+                                <a href="about.html">About</a>
+                                <a href="news.html">News</a>
+                                <a href="blogs.html">Blogs</a>
+                                <a href="contact.html">Contact</a>
                             </div>
                         </div>
                     </li>
@@ -117,7 +129,7 @@
     </section>
     <!--============================================ END START  -->
     <!--============================================ ABOUT START  -->
-    <section id="about" class="padding">
+    <section id="about" class="padding animate__bounce">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -401,8 +413,10 @@
                         <div class="events_men_block d-flex align-items-center">
                             <div class="events_data_block">
                                 <div class="event_data text-center">
-                                    <span>April</span> <br>
-                                    <span>25</span>
+                                    <strong>25
+                                        </strong><br>
+                                    <span>Apr</span>
+
                                 </div>
 
                             </div>
@@ -423,8 +437,10 @@
                         <div class="events_men_block d-flex align-items-center">
                             <div class="events_data_block">
                                 <div class="event_data text-center">
-                                    <span>April</span> <br>
-                                    <span>25</span>
+                                    <strong>25
+                                        </strong><br>
+                                    <span>Apr</span>
+
                                 </div>
 
                             </div>
@@ -445,8 +461,10 @@
                         <div class="events_men_block d-flex align-items-center">
                             <div class="events_data_block">
                                 <div class="event_data text-center">
-                                    <span>April</span> <br>
-                                    <span>25</span>
+                                    <strong>25
+                                        </strong><br>
+                                    <span>Apr</span>
+
                                 </div>
 
                             </div>
@@ -467,8 +485,10 @@
                         <div class="events_men_block d-flex align-items-center">
                             <div class="events_data_block">
                                 <div class="event_data text-center">
-                                    <span>April</span> <br>
-                                    <span>25</span>
+                                    <strong>25
+                                        </strong><br>
+                                    <span>Apr</span>
+
                                 </div>
 
                             </div>
@@ -806,7 +826,8 @@
     <script src="js/font-awesom.js"></script>
     <script src="js/main.js"></script>
 
-
+    <script>
+    </script>
 
 </body>
 
