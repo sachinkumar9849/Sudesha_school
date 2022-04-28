@@ -117,3 +117,60 @@ window.addEventListener("load", callbackFunc);
 window.addEventListener("scroll", callbackFunc);
 
 //MILESTONE END
+
+//ABOUT READ MORE START
+
+// The function toggles more (hidden) text when the user clicks on "Read more". The IF ELSE statement ensures that the text 'read more' and 'read less' changes interchangeably when clicked on.
+class readMore {
+    constructor() {
+        this.content = '.readmore__content';
+        this.buttonToggle = '.readmore__toggle';
+    }
+
+    bootstrap() {
+        this.setNodes();
+        this.init();
+        this.addEventListeners();
+    }
+
+    setNodes() {
+        this.nodes = {
+            contentToggle: document.querySelector(this.content)
+        };
+
+        this.buttonToggle = this.nodes.contentToggle.parentElement.querySelector(this.buttonToggle);
+    }
+
+    init() {
+        const { contentToggle } = this.nodes;
+
+        this.stateContent = contentToggle.innerHTML;
+
+        contentToggle.innerHTML = `${this.stateContent.substring(0, 500)}...`;
+    }
+
+    addEventListeners() {
+        this.buttonToggle.addEventListener('click', this.onClick.bind(this))
+    }
+
+    onClick(event) {
+        const targetEvent = event.currentTarget;
+        const { contentToggle } = this.nodes
+
+        if (targetEvent.getAttribute('aria-checked') === 'true') {
+            targetEvent.setAttribute('aria-checked', 'false')
+            contentToggle.innerHTML = this.stateContent;
+            this.buttonToggle.innerHTML = 'Show less'
+
+        } else {
+            targetEvent.setAttribute('aria-checked', 'true')
+            contentToggle.innerHTML = `${this.stateContent.substring(0, 500)}...`
+            this.buttonToggle.innerHTML = 'Read More'
+        }
+    }
+}
+
+
+const initReadMore = new readMore();
+initReadMore.bootstrap()
+    //ABOUT READ MORE END
