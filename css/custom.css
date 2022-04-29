@@ -1377,7 +1377,7 @@
                 position: absolute;
                 left: 25%;
                 top: 50%;
-                width: 28%;
+                /* width: 28%; */
                 transform: translate(-25%, -50%);
                 background: #00000082;
                 border-radius: 0;
@@ -2687,16 +2687,41 @@
             
             @media (min-width: 992px) {}
             
-            @media (min-width: 1200px) {}
-            
             @media (min-width: 1199.98px) and (max-width: 1443.98px) {
                 section#about {
                     width: 95%;
+                }
+                /* .banner_content {
+                    width: 56%;
+                } */
+                .section_title h1 {
+                    font-family: Montserrat, sans-serif;
+                    line-height: 48px;
+                    font-weight: 600;
+                    font-size: 30px;
+                    letter-spacing: 1px;
                 }
             }
             
             @media (min-width: 1444px) and (max-width: 1688.98px) {
                 section#about {
                     width: 88%;
+                }
+                /* .banner_content {
+                    width: 56%;
+                } */
+                .section_title h1 {
+                    font-family: Montserrat, sans-serif;
+                    line-height: 48px;
+                    font-weight: 600;
+                    font-size: 30px;
+                    letter-spacing: 1px;
+                }
+            }
+            
+            @media (max-width: 1443.98) {
+                .facilites_content h2 {
+                    font-size: 20px;
+                    line-height: 40px;
                 }
             }
